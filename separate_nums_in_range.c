@@ -19,15 +19,17 @@
 
 void display_numbers_in_range(Numbers_in_range *numbersList)
 {
+	printf("[\n");
 	for (int i = 0; i < 3; i++)
 	{
-		printf("[");
+		printf("  [");
 		for (int j = 0; j < numbersList[i].length; j++)
 		{
 			printf(" %d ", numbersList[i].numbers[j]);
 		}
 		printf("]\n");
 	}
+	printf("]\n");
 }
 
 Numbers_in_range *separate_nums_in_range(int *number_list, int start, int end, int length)
